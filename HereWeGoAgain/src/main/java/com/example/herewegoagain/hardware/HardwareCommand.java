@@ -6,7 +6,7 @@ import javax.validation.constraints.NotNull;
 public class HardwareCommand {
 
     @NotBlank(message = "Index must be entered.")
-    private String index;
+    private String code;
 
     @NotBlank(message = "Name must be entered.")
     private String name;
@@ -18,14 +18,14 @@ public class HardwareCommand {
     private String type;
 
     @NotNull(message = "Stock must be entered.")
-    private Integer inStock;
+    private Integer Stock;
 
     public String getName() {
         return name;
     }
 
-    public String getIndex() {
-        return index;
+    public String getCode() {
+        return code;
     }
 
     public Double getPrice() {
@@ -36,12 +36,12 @@ public class HardwareCommand {
         return type;
     }
 
-    public Integer getInStock() {
-        return inStock;
+    public Integer getStock() {
+        return Stock;
     }
 
-    public void setIndex(String index) {
-        this.index = index;
+    public void setCode(String code) {
+        this.code = code;
     }
 
     public void setName(String name) {
@@ -56,7 +56,7 @@ public class HardwareCommand {
         this.type = type;
     }
 
-    public void setInStock(Integer inStock) {
-        this.inStock = inStock;
+    public void setStock(Integer stock) {
+        this.Stock = stock;
     }
 }

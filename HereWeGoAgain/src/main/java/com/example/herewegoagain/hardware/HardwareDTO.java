@@ -1,21 +1,21 @@
 package com.example.herewegoagain.hardware;
 
 public class HardwareDTO {
-    private String index;
+    private String code;
     private String name;
     private Double price;
 
-    public HardwareDTO(String index , String name, Double price) {
-        this.index = index;
+    public HardwareDTO(String code, String name, Double price) {
+        this.code = code;
         this.name = name;
         this.price = price;
     }
-    public String getIndex() {
-        return index;
+    public String getCode() {
+        return code;
     }
 
-    public void setIndex(String index) {
-        this.index = index;
+    public void setCode(String code) {
+        this.code = code;
     }
 
     public String getName() {

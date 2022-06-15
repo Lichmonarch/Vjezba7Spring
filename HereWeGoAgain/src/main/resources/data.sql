@@ -21,7 +21,7 @@ values ('004', 'Moćan ali se ruši...', 'tekst recenzije je ovdje', 3, '003');
 insert into review (index, title, body, rating, id_hardware)
 values ('005', 'Samo 15.6GB je iskoritivo!!!', 'tekst recenzije je ovdje', 2, '004');
 
-insert into users_table (id, username, password)
+insert into user(id, username, password)
 values
     (1, 'user', '$2a$12$h0HcS2QDb/7zPASbLa2GoOTSRP6CWK0oX7pCK.dPjkM6L5N4pNovi'), -- password = user
     (2, 'admin', '$2a$12$INo0nbj40sQrTB7b28KJput/bNltGmFyCfRsUhvy73qcXo5/XdsTG'); -- password = admin

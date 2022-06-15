@@ -29,7 +29,7 @@ public class ReviewClassService implements ReviewService{
     }
 
     private ReviewDTO mapReviewToDTO(Review review){
-        return new ReviewDTO(review.getTitle(), review.getRating());
+        return new ReviewDTO(review.getTitle(), review.getBody(), review.getRating());
     }
 }
 

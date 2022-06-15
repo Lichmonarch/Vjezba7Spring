@@ -46,8 +46,8 @@ public class HardwareClassService implements HardwareService, Serializable {
     }
 
     private Hardware mapCommandToHardware(HardwareCommand hardwareCommand) {
-        return new Hardware( hardwareCommand.getIndex(),hardwareCommand.getName(),
-                hardwareCommand.getPrice(), hardwareCommand.getType(), hardwareCommand.getInStock());
+        return new Hardware( hardwareCommand.getCode(),hardwareCommand.getName(),
+                hardwareCommand.getPrice(), hardwareCommand.getType(), hardwareCommand.getStock());
     }
 
     private HardwareDTO mapHardwareToDTO(final Hardware hardware){

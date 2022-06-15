@@ -12,8 +12,6 @@ import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.nio.charset.StandardCharsets;
-
 import static org.hamcrest.Matchers.hasSize;
 import static org.hamcrest.Matchers.notNullValue;
 import static org.springframework.security.test.web.servlet.request.SecurityMockMvcRequestPostProcessors.csrf;
@@ -71,11 +69,11 @@ class HardwareControllerTest {
     void save() throws Exception {
 
         HardwareCommand hardwareCommand = new HardwareCommand();
-        hardwareCommand.setIndex("5");
+        hardwareCommand.setCode("5");
         hardwareCommand.setName("ime");
         hardwareCommand.setType("CPU");
         hardwareCommand.setPrice(100.0);
-        hardwareCommand.setInStock(10);
+        hardwareCommand.setStock(10);
 
         this.mockMvc.perform(
                         post("/hardware")
@@ -102,7 +100,7 @@ class HardwareControllerTest {
         hardwareCommand.setName("ime");
         hardwareCommand.setType("CPU");
         hardwareCommand.setPrice(100.0);
-        hardwareCommand.setInStock(10);
+        hardwareCommand.setStock(10);
 
         this.mockMvc.perform(
                         put("/hardware/3")
